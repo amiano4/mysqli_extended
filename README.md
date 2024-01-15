@@ -9,14 +9,24 @@ require_once(path/mysqli_extended.php);
 
 $conn = new mysqli_extended($hostname, $username, $password, $database);
 
+// use case 1
 $conn->execute("SELECT * FROM table WHERE id = ?", $id);
+
+// use case 2
+$conn->execute("SELECT * FROM table WHERE id = 1");
+
+// use case 3
+$conn->execute("SELECT * FROM table WHERE name = ? and pass = ?", $name, $pass);
+
+// use case 4
+$conn->execute("SELECT * FROM table WHERE name = ? and pass = ?", [$name, $pass]);
 ```
 
 Native mysqli methods are still supported.
 
 ### Methods (current):
 
-- **execute()** basic use for query executions. Uses prepared statements, 1 or more arguments can be provided.
+- **execute()** basic use for query executions (uses prepared statements)
 - **fetchAll()** returns an array of multiple records
 - **fetchAssoc()** returns an associative array of a record from database
 - **lastInsertID()** equivalent to $conn->insert_id
