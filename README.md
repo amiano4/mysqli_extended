@@ -8,6 +8,8 @@
 require_once(path/mysqli_extended.php);
 
 $conn = new mysqli_extended($hostname, $username, $password, $database);
+
+$conn->execute("SELECT * FROM table WHERE id = ?", $id);
 ```
 
 Native mysqli methods are still supported.
@@ -20,7 +22,10 @@ Native mysqli methods are still supported.
 
 ###### Disclaimer:
 
-This PHP Class is a replica of David Adams' [Super-fast PHP MySQL Database Class] (https://codeshack.io/super-fast-php-mysql-database-class/)
+This PHP Class is a replica of David Adams' Super-fast PHP MySQL Database Class
+link: (https://codeshack.io/super-fast-php-mysql-database-class/)
+
+Visit the link to get enlightened with full functionality of the `execute()` function (in his version is `query()`).
 
 ### TO-DO's
 
