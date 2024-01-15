@@ -16,6 +16,7 @@ Native mysqli methods are still supported.
 
 ### Methods (current):
 
+- **execute()** basic use for query executions. Uses prepared statements, 1 or more arguments can be provided.
 - **fetchAll()** returns an array of multiple records
 - **fetchAssoc()** returns an associative array of a record from database
 - **lastInsertID()** equivalent to $conn->insert_id
