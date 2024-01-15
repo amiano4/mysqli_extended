@@ -20,7 +20,7 @@ Native mysqli methods are still supported.
 
 ###### Disclaimer:
 
-This new PHP class has been
+This PHP Class is a replica of David Adams' [Super-fast PHP MySQL Database Class] (https://codeshack.io/super-fast-php-mysql-database-class/)
 
 ### TO-DO's
 
