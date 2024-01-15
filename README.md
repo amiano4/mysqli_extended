@@ -12,7 +12,7 @@ $conn = new mysqli_extended($hostname, $username, $password, $database);
 
 Native mysqli methods are still supported.
 
-##### Methods (current):
+### Methods (current):
 
 - **fetchAll()** returns an array of multiple records
 - **fetchAssoc()** returns an associative array of a record from database
