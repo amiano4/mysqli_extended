@@ -1,0 +1,23 @@
+
+root = true
+
+# Charset settings
+[*]
+charset = utf-8
+
+# Tab and indentation settings
+[*.php]
+indent_style = spaces
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Set maximum line length
+max_line_length = 120
+
+# End of line settings
+end_of_line = lf
+
+# Ignore certain files and directories
+[*.md]
+trim_trailing_whitespace = false
